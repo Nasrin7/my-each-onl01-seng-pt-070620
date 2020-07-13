@@ -9,11 +9,7 @@ def my_each(array)
  array
 end
 
-my_each() {|item| puts "#{item}"}
+collection = [1,2,3,4]
+my_each(collection) do {|i| puts "#{i}"}
 
-hello_t(["Tim", "Tom", "Jim"]) do |name|
-  if name.start_with?("T")
-    puts "Hi, #{name}"
-  end
-end
 
