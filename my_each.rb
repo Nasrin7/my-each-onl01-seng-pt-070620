@@ -1,8 +1,8 @@
 def my_each(array)
   if block_given?
      i = 0 
-     while i <= array.length
-       yield.array[i]
+     while i < array.length
+       yield(array[i])
        i += 1
      end
  end
@@ -10,3 +10,4 @@ def my_each(array)
 end
 
 my_each {|item| puts "#{item}"}
+
